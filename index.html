@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<!--		<link rel="stylesheet" type="text/css" href="css/fullpage.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-labelauty.css" />
+		<!--<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.js"></script>
+		<script type="text/javascript" src="js/fullpage.js"></script>-->
+		<title></title>
+	</head>
+
+	<body>
+		<div id="fullpage">
+			<!--<div class="section">第一屏</div>
+			<div class="section">第二屏</div>
+			<div class="section">
+				<div class="slide">第三屏的第一屏</div>
+				<div class="slide">第三屏的第二屏</div>
+				<div class="slide">第三屏的第三屏</div>
+				<div class="slide">第三屏的第四屏</div>
+			</div>-->
+			<div class="section">
+				<div class="reTitle">
+					<div class="rePic">
+						<a href="#">
+							<img src="img/arrow.png" height="100%" width="auto" />
+						</a>
+					</div>
+					<div class="reText">
+						三翼工作室招募令
+					</div>
+					<div class="rePic">
+
+					</div>
+				</div>
+				<div class="reBlank">
+
+				</div>
+				<div class="reBody">
+					<form action="in.php" method="post" id="reform">
+						<div class="reCapsule">
+							<div class="reBlue">
+								报名表信息填写
+							</div>
+						</div>
+						<div class="reForm">
+							<div class="input">
+								<input type="text" id="input" name="name" placeholder="姓名" />
+							</div>
+							<div class="input">
+								<div class="reWhite">
+
+								</div>
+								<input type="radio" name="sex" value="男" data-labelauty="男" />
+								<div class="reWWhite">
+
+								</div>
+								<input type="radio" name="sex" value="女" data-labelauty="女" />
+								<div class="reWhite">
+
+								</div>
+							</div>
+							<div class="input">
+								<input type="text" id="input" name="tel" placeholder="手机号" />
+							</div>
+							<div class="inPQM">
+								<input type="text" id="input" name="qq" placeholder="QQ" />
+							</div>
+							<div class="inPQM">
+								<select name="yuan" id="seList">
+									<option value="院系" disabled selected style='display:none;'>选择你的院系</option>
+									<option value="法学院与知识产权学院">法学院与知识产权学院</option>
+									<option value="信用风险管理学院">信用风险管理学院</option>
+									<option value="计算机科学与数学学院">计算机科学与数学学院</option>
+									<option value="公共管理学院">公共管理学院</option>
+									<option value="兴湘学院">兴湘学院</option>
+									<option value="化学学院">化学学院</option>
+									<option value="材料工程学院">材料工程学院</option>
+								</select>
+							</div>
+							<div class="inPQM">
+								<input type="text" name="class" id="input" placeholder="专业" />
+							</div>
+							<div class="inPQM">
+								<input type="text" name="cardID" id="input" placeholder="三翼小金卡号" />
+							</div>
+						</div>
+						<div class="reWill">
+							<!--<div class="reWTitle" name="md1">
+								第一志愿
+							</div>-->
+							<select name="md1" class="reOption">
+								<option value="" disabled selected style='display:none;'>第一志愿</option>
+								<option value="">1</option>
+								<option value="">2</option>
+							</select>
+							<!--<div class="reWTitle" name="md2">
+								第二志愿
+							</div>-->
+							<select name="md2" class="reOption">
+								<option value="" disabled selected style='display:none;'>第二志愿</option>
+								<option value="">1</option>
+								<option value="">2</option>
+							</select>
+							<!--<div class="reWTitle" name="md3">
+								第三志愿
+							</div>-->
+							<select name="md3" class="reOption">
+								<option value="" disabled selected style='display:none;'>第三志愿</option>
+								<option value="">1</option>
+								<option value="">2</option>
+							</select>
+							<!--<div class="reOption">
+								新媒体运营部
+							</div>
+							<div class="reOption">
+								多媒体事业部
+							</div>
+							<div class="reOption">
+								通讯社
+							</div>
+							<div class="reOption">
+								产品运营部
+							</div>
+							<div class="reOption">
+								产品经理组
+							</div>
+							<div class="reOption">
+								技术开发部
+							</div>
+							<div class="reOption">
+								企划公关部
+							</div>
+							<div class="reOption">
+								设计部
+							</div>
+							<div class="reOption">
+								行政人事部
+							</div>-->
+						</div>
+						<div class="reIntro">
+							<div class="reIVer">
+
+							</div>
+							<!--<input type="text" name="reIntro" id="reIntro" value="" />-->
+							<textarea name="reIntro" name="trod" id="reIntro" placeholder="尽情发挥，介绍自己吧！"></textarea>
+						</div>
+						<div class="reCompany">
+							<div class="reTips">
+								与小伙伴一起报名可获丰厚奖励哟～（选填）
+							</div>
+							<div class="input">
+								<input type="text" id="input" placeholder="小伙伴姓名" />
+							</div>
+							<div class="input">
+								<input type="text" id="input" placeholder="小伙伴三翼小金卡号" />
+							</div>
+							<div class="reCFeed">
+								<a href="#" id="feedHref">有问题？反馈一下～</a>
+							</div>
+						</div>
+						<div class="reBtn">
+							<input type="submit" id="reBtn" value="报名" />
+						</div>
+						<div class="reBl">
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js">
+		</script>
+		<script type="text/javascript" src="js/jquery-labelauty.js">
+		</script>
+		<script>
+			$(function() {
+				$(':input').labelauty();
+			});
+		</script>
+	</body>
+	<script>
+		$(function() {
+			//获取网页中所有的form表单
+			$("form").each(function() {
+				//注册表单的提交事件
+				$(this).submit(function(event) {
+					//屏蔽表单的注册
+					event.preventDefault();
+					//获取url
+					var url = $(this).attr("action");
+
+					request(url,
+						'POST',
+						JSON.stringify($(this).serializeObject()),
+						function() {
+							alert('123');
+						},
+						null);
+				});
+			});
+
+		});
+
+		//将$.ajax函数 转化成一个简单的接口
+		function request(url, method, param, callback, fail) {
+			//alert(param);
+			$.ajax({
+				type: method,
+				//async:false,
+				contentType: "application/json;charset=UTF-8",
+				dataType: "json",
+				url: url,
+				data: param,
+				success: callback,
+				error: fail,
+			});
+		}
+
+		//将form表单里面的数据转化为json对象
+		$.fn.serializeObject = function() {
+			var o = {};
+			var a = this.serializeArray();
+			$.each(a, function() {
+				if(o[this.name] !== undefined) {
+					if(!o[this.name].push) {
+						o[this.name] = [o[this.name]];
+					}
+					o[this.name].push(this.value || '');
+				} else {
+					o[this.name] = this.value || '';
+				}
+			});
+			return o;
+		};
+	</script>
+
+</html>
