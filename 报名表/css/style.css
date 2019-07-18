@@ -1,0 +1,267 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.section {
+	background-color: white;
+}
+
+.reTitle {
+	width: 100%;
+	height: 180px;
+	line-height: 180px;
+	text-align: center;
+	font-size: 63px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.rePic {
+	width: 20%;
+	height: 180px;
+	float: left;
+}
+
+.reText {
+	width: 60%;
+	height: 180px;
+	float: left;
+}
+
+.reBlank {
+	width: 100%;
+	height: 50px;
+	background-color: #fdfdfd;
+	border-bottom: 1px solid #ebebeb;
+	border-top: 1px solid #ebebeb;
+}
+
+.reBody {
+	width: 100%;
+}
+
+.reCapsule {
+	width: 100%;
+	height: 238px;
+}
+
+.reBlue {
+	width: 40%;
+	height: 90px;
+	position: absolute;
+	font-size: 36px;
+	border-radius: 50px;
+	line-height: 90px;
+	text-align: center;
+	background-color: #58a8ca;
+	color: #fdfdfd;
+	left: -49px;
+	margin-top: 74px;
+	box-shadow: 10px 10px 10px #cecece;
+}
+
+.reForm {
+	width: 100%;
+	float: left;
+	margin-top: 55px;
+}
+
+.input,
+.inPQM {
+	width: 100%;
+	height: 55px;
+	margin-top: 54px;
+	display: flex;
+	justify-content: center;
+	float: left;
+}
+
+.inPQM {
+	margin-top: 108px;
+}
+
+#input,
+#seList {
+	width: 60%;
+	height: 55px;
+	font-size: 35px;
+	border: none;
+	background-color: white;
+	border-bottom: 2px solid #ede04f;
+}
+
+
+/*select{
+	color: green;
+}*/
+
+#seList {
+	color: black;
+	font-size: 35px;
+}
+
+#sexBtn {
+	width: 15%;
+	height: 55px;
+	line-height: 55px;
+	font-size: 46px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: 2px 2px 10px #cecece;
+}
+
+.reWhite {
+	width: 20%;
+	height: 60px;
+	float: left;
+}
+
+.reWWhite {
+	width: 30%;
+	height: 55px;
+	float: left;
+}
+
+.reWill {
+	width: 100%;
+	float: left;
+	margin-top: 68px;
+	/*	margin-bottom: 140px;*/
+}
+
+.reWTitle {
+	width: 33.3%;
+	height: 35px;
+	font-size: 38px;
+	text-align: center;
+	float: left;
+	margin-bottom: 131px;
+}
+
+.reOption {
+	width: 26%;
+	height: 94px;
+	line-height: 85px;
+	float: left;
+	margin-top: 75px;
+	margin-left: 5.5%;
+	text-align: center;
+	background-color: white;
+	border: 2px solid blueviolet;
+	font-size: 38px;
+}
+
+.reIntro {
+	width: 100%;
+	float: left;
+	margin-top: 137px;
+	display: flex;
+	justify-content: center;
+}
+
+#reIntro {
+	width: 90%;
+	height: 470px;
+	font-size: 58px;
+	text-align: center;
+	border: 2px solid grey;
+	border-radius: 17px;
+}
+
+.reIVer {
+	width: 10px;
+	height: 470px;
+	/*	float: left;*/
+	background-color: blue;
+}
+
+.reCompany {
+	width: 100%;
+	float: left;
+	margin-top: 50px;
+}
+
+.reTips {
+	width: 100%;
+	font-size: 35px;
+	text-align: center;
+}
+
+.reCFeed {
+	width: 100%;
+	height: 55px;
+	float: left;
+	font-size: 35px;
+	margin-top: 93px;
+	text-align: right;
+}
+
+#feedHref {
+	text-decoration: none;
+}
+
+.reBtn {
+	width: 100%;
+	height: 100px;
+	float: left;
+	text-align: center;
+	margin-top: 49px;
+}
+
+#reBtn {
+	width: 35%;
+	height: 100px;
+	border-radius: 13px;
+	background-color: #459ad0;
+	font-size: 35px;
+	color: white;
+	text-align: center;
+	border: none;
+}
+
+.reBl {
+	width: 100%;
+	height: 60px;
+	float: left;
+}
+
+
+.inTitle{
+	width: 100%;
+	height: 320px;
+	text-align: center;
+	font-size: 80px;
+	line-height: 320px;
+	float: left;
+}
+.inBg{
+	width: 100%;
+	height: 780px;
+	float: left;
+}
+.inName{
+	width: 100%;
+	height: 55px;
+	margin-top: 80px;
+	float: left;
+	display: flex;
+	justify-content: center;
+}
+.inBtn{
+	width: 100%;
+	height: 80px;
+	margin-top: 80px;
+	float: left;
+	display: flex;
+	justify-content: center;
+}
+#inBtn{
+	width: 40%;
+	height: 80px;
+	color: #CECECE;
+	font-size: 35px;
+	border-radius: 50px;
+	background-color: #3498DB;
+/*	border: none;*/
+}

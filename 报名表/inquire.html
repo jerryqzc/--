@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title></title>
+	</head>
+
+	<body>
+		<form action="out.php" method="post">
+			<div class="inTitle">
+				录取查询
+			</div>
+			<div class="inBg">
+
+			</div>
+			<div class="inName">
+				<input type="text" name="name" id="input" value="" placeholder="姓名" />
+			</div>
+			<div class="inName">
+				<input type="text" name="tel" id="input" value="" placeholder="手机号" />
+			</div>
+			<div class="inBtn">
+				<input type="submit" name="" id="inBtn" value="查询" />
+			</div>
+		</form>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js">
+		</script>
+		<script type="text/javascript" src="js/jquery-labelauty.js">
+		</script>
+	</body>
+	<script>
+		$(function() {
+			//获取网页中所有的form表单
+			$("form").each(function() {
+				//注册表单的提交事件
+				$(this).submit(function(event) {
+					//屏蔽表单的注册
+					event.preventDefault();
+					//获取url
+					var url = $(this).attr("action");
+
+					request(url,
+						'POST',
+						JSON.stringify($(this).serializeObject()),
+						function() {
+							alert('123');
+						},
+						null);
+				});
+			});
+
+		});
+
+		//将$.ajax函数 转化成一个简单的接口
+		function request(url, method, param, callback, fail) {
+			//alert(param);
+			$.ajax({
+				type: method,
+				//async:false,
+				contentType: "application/json;charset=UTF-8",
+				dataType: "json",
+				url: url,
+				data: param,
+				success: callback,
+				error: fail,
+			});
+		}
+
+		//将form表单里面的数据转化为json对象
+		$.fn.serializeObject = function() {
+			var o = {};
+			var a = this.serializeArray();
+			$.each(a, function() {
+				if(o[this.name] !== undefined) {
+					if(!o[this.name].push) {
+						o[this.name] = [o[this.name]];
+					}
+					o[this.name].push(this.value || '');
+				} else {
+					o[this.name] = this.value || '';
+				}
+			});
+			return o;
+		};
+	</script>
+
+</html>
